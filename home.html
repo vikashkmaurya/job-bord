@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="footer.css">
+    <!-- Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo ml-3">Job Board</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="job.html">Job</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login mr-2">Log In</button>
+                <button class="post-job mr-3">Post A Job</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class=" hero-container">
+                <h2 style="color: black; font-weight:bold ">4536+ Jobs listed</h2>
+                <h3 style="color:black; font-weight:bold">Find your Dream Job</h3>
+                <p>We provide online instant cash loans with quick approval that suit your term length</p>
+                <button class="upload-btn" onclick="uploadResume()">Upload Your Resume</button>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <h1 class="text-center mb-5 wow">Explore By Category</h1>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <a class="cat-item rounded p-4" href="">
+                        <i class="fa fa-3x fa-mail-bulk text-green-500 mb-4"></i>
+                        <h6 class="mb-3">Marketing</h6>
+                        <p class="mb-0">123 Vacancy</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <a class="cat-item rounded p-4" href="">
+                        <i class="fa fa-3x fa-headset text-green-500 mb-4"></i>
+                        <h6 class="mb-3">Customer Service</h6>
+                        <p class="mb-0">123 Vacancy</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <a class="cat-item rounded p-4" href="">
+                        <i class="fa fa-3x fa-user-tie text-green-500 mb-4"></i>
+                        <h6 class="mb-3">Human Resource</h6>
+                        <p class="mb-0">123 Vacancy</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                    <a class="cat-item rounded p-4" href="">
+                        <i class="fa fa-3x fa-tasks text-green-500 mb-4"></i>
+                        <h6 class="mb-3">Project Management</h6>
+                        <p class="mb-0">123 Vacancy</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <a class="cat-item rounded p-4" href="">
+                        <i class="fa fa-3x fa-chart-line text-green-500 mb-4"></i>
+                        <h6 class="mb-3">Business Development</h6>
+                        <p class="mb-0">123 Vacancy</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <a class="cat-item rounded p-4" href="">
+                        <i class="fa fa-3x fa-hands-helping text-green-500 mb-4"></i>
+                        <h6 class="mb-3">Sales &amp; Communication</h6>
+                        <p class="mb-0">123 Vacancy</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <a class="cat-item rounded p-4" href="">
+                        <i class="fa fa-3x fa-book-reader text-green-500 mb-4"></i>
+                        <h6 class="mb-3">Teaching &amp; Education</h6>
+                        <p class="mb-0">123 Vacancy</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                    <a class="cat-item rounded p-4" href="">
+                        <i class="fa fa-3x fa-drafting-compass text-green-500 mb-4"></i>
+                        <h6 class="mb-3">Design &amp; Creative</h6>
+                        <p class="mb-0">123 Vacancy</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="md:py-[80] py-5 flex mx-auto sm:flex-row flex-col bg-gray-800">
+        <div class="basis-[45%] pb-5 ml-2">
+            <img src="123.avif" class="w-full">
+        </div>
+        <div class="basis-[55%] px-5">
+            <h1 class="text-4xl pb-5 text-white text-center ">Computer Training Center</h1>
+            <p class="py-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptas, voluptatibus alias nostrum qui ut ea quidem sint obcaecati porro blanditiis omnis maiores soluta commodi, ipsa deleniti nobis vero architecto?</p>
+            <p class="py-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptas, voluptatibus alias nostrum qui ut ea quidem sint obcaecati porro blanditiis omnis maiores soluta commodi, ipsa deleniti nobis vero architecto?</p>
+            <p class="py-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptas, voluptatibus alias nostrum qui ut ea quidem sint obcaecati porro blanditiis omnis maiores soluta commodi, ipsa deleniti nobis vero architecto?</p>
+        </div>
+    </div>
+
+
+    <div class="md:py-[80] py-5 flex mx-auto sm:flex-row flex-col bg-gray-800">
+        <div class="basis-[55%] px-5">
+            <h1 class="text-4xl pb-5 text-white text-center">Computer Training Center</h1>
+            <p class="py-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptas, voluptatibus alias nostrum qui ut ea quidem sint obcaecati porro blanditiis omnis maiores soluta commodi, ipsa deleniti nobis vero architecto?</p>
+            <p class="py-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptas, voluptatibus alias nostrum qui ut ea quidem sint obcaecati porro blanditiis omnis maiores soluta commodi, ipsa deleniti nobis vero architecto?</p>
+            <p class="py-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptas, voluptatibus alias nostrum qui ut ea quidem sint obcaecati porro blanditiis omnis maiores soluta commodi, ipsa deleniti nobis vero architecto?</p>
+        </div>
+        <div class="basis-[45%] pb-5">
+            <img src="123.avif" class="w-full">
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-blue-600  p-4">
+        <div class="container mx-auto text-center text-white">
+            <p>&copy; 2024 CareerHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

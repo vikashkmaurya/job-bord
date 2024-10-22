@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+    .header {
+        background: #050924;
+        color: white;
+        padding: 15px 0;
+    }
+    
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header .logo {
+        font-size: 1.5em;
+    }
+    
+    .header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .header nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .auth-buttons {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .auth-buttons button {
+        background: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .blog-section {
+        padding: 20px 0;
+        background: #fff;
+        text-align: center;
+    }
+    
+    .blog-section h2 {
+        margin-bottom: 20px;
+        font-size: 2em;
+        color: #333;
+    }
+    
+    .blog-post {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f9f9f9;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .blog-post img {
+        width: 40%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .blog-content {
+        width: 55%;
+        text-align: left;
+        padding-left: 20px;
+    }
+    
+    .blog-content h3 {
+        margin: 0 0 10px 0;
+        font-size: 1.5em;
+        color: #0056b3;
+    }
+    
+    .blog-content p {
+        font-size: 1em;
+        color: #666;
+        line-height: 1.6;
+    }
+    
+    .blog-content button {
+        background: #00aaff;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+    .blog-content button:hover {
+        background: #007acc;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo ml-3">Job Board</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="job.html">Job</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login mr-2">Log In</button>
+                <button class="post-job mr-3">Post A Job</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="blog-section">
+            <div class="container">
+                <h2>Latest Blog Posts</h2>
+                <div class="blog-post">
+                    <img src="blog.jpg" alt="Blog Post 1">
+                    <div class="blog-content">
+                        <h3>How to Write a Great Resume</h3>
+                        <p>Discover tips and tricks for crafting a resume that will catch the eye of hiring managers and help you land your dream job...</p>
+                        <button onclick="window.location.href='#'">Read More</button>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <img src="blog1.jpg" alt="Blog Post 2">
+                    <div class="blog-content">
+                        <h3>Top 5 Interview Questions</h3>
+                        <p>Prepare yourself with these common interview questions and learn how to answer them effectively to impress your interviewer...</p>
+                        <button onclick="window.location.href='#'">Read More</button>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <img src="blog2.jpg" alt="Blog Post 3">
+                    <div class="blog-content">
+                        <h3>The Future of Remote Work</h3>
+                        <p>Explore how remote work is shaping the future of the job market and what skills you need to stay ahead in this new landscape...</p>
+                        <button onclick="window.location.href='#'">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-blue-600 mt-10 p-4">
+        <div class="container mx-auto text-center text-white">
+            <p>&copy; 2024 CareerHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
